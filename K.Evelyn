@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title> SMAK. Santo Stanislaus & Informatika UKWMS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #10253d; /* gelap biru navy */
+      color: #b3d8fd;    /* biru muda pastel */
+      font-family: 'Montserrat', Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      width: 100vw;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      min-height: 100vh;
+    }
+    .title {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 2.3rem;
+      color: #76a7fa; /* biru sedang */
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.7rem;
+      color: #76a7fa;
+      margin-bottom: 25px;
+    }
+    .tik {
+      font-family: 'Pacifico', cursive;
+      font-size: 4.2rem;
+      color: #3a8dde; /* biru medium */
+      margin: 35px 0 45px 0;
+      letter-spacing: 3px;
+      text-shadow: 0 2px 8px #3a8dde66;
+    }
+    .row {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-bottom: 35px;
+    }
+    .photo-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 260px;
+      min-height: 120px;
+      margin: 0 10px;
+      background: #163d65; /* biru navy lebih terang */
+      border-radius: 18px;
+      box-shadow: 0 2px 14px #3a8dde40;
+      padding: 25px 10px 15px 10px;
+    }
+    .photo-placeholder {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #3a8dde 0%, #b3d8fd 100%);
+      border-radius: 15px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1rem;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 0 9px #76a7fa80;
+      transition: box-shadow 0.2s;
+    }
+    .photo-block img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 12px;
+      box-shadow: 0 0 9px #76a7fa80;
+    }
+    .photo-caption {
+      color: #b3d8fd;
+      text-align: center;
+      font-size: 1.09rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .photo-caption.red {
+      color: #0d6efd; /* biru primary (red diganti biru) */
+      font-size: 1.07rem;
+      margin-bottom: 3px;
+    }
+    .ig {
+      color: #76a7fa;
+      font-size: 1.1rem;
+      margin-top: 7px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 600;
+    }
+    /* Nama di tengah bawah */
+    .bottom-name {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      width: 300px;
+      background: linear-gradient(90deg, #3a8dde 0%, #76a7fa 100%);
+      border-radius: 18px;
+      box-shadow: 0 0 14px #3a8dde75;
+      padding: 18px 10px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      outline: none;
+      border: none;
+    }
+    .bottom-name .kelas {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #b3d8fd;
+      margin-top: 2px;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 20px 5px 60px 5px;
+        min-height: 110vh;
+      }
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .photo-block {
+        width: 95vw;
+        max-width: 350px;
+        margin-bottom: 25px;
+      }
+      .tik {
+        font-size: 3rem;
+      }
+      .title, .subtitle {
+        font-size: 1.2rem;
+      }
+      .bottom-name {
+        font-size: 1rem;
+        width: 90vw;
+        max-width: 330px;
+        padding: 14px;
+        bottom: 12px;
+      }
+      .bottom-name .kelas {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">SMAK. Santo Stanislaus<br>&amp;<br>Informatika UKWMS</div>
+    <div class="tik">TIK B</div>
+
+    <!-- Atas row -->
+    <div class="row">
+      <div class="photo-block">
+        <div class="photo-placeholder"><img src="Logo informatika ukwms.jpg"></div>
+        <div class="photo-caption">Informatika UKWMS</div>
+      </div>
+      <div style="width: 100px;"></div>
+      <div class="photo-block">
+        <div class="photo-placeholder"><img src="Logo smaksta.jpg"></div>
+        <div class="photo-caption">SMAKSTA</div>
+      </div>
+    </div>
+
+    <!-- Bawah row -->
+    <div class="row">
+      <div class="photo-block">
+        <div class="photo-placeholder red"><img src="Logo instagram.jpg"></div>
+        <div class="ig">informatika.ukwms on instagram</div>
+      </div>
+      <div style="width: 100px;"></div>
+      <div class="photo-block">
+        <div class="photo-placeholder red"><img src="Logo instagram.jpg"></div>
+        <div class="ig">smak_santo_stanslaus on instagram</div>
+      </div>
+    </div>
+   <h1
+    <!-- Nama di tengah bawah -->
+    <div class="bottom-name">
+    Katarina Evelyn Gunawan
+      <div class="kelas">12-TIK B</div>
+    </div>
+  </div>
+</body>
+</html>
+</body>
+</html>
